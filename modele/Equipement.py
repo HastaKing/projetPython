@@ -2,223 +2,25 @@ class Equipement:
     def __init__(self, equipementId):
         self.equipementId = equipementId
 
-    "AnneeServiceLib": "1975-1984",
-            "AnneeTravauxRealLibelle": null,
-            "ComInsee": "49232",
-            "ComLib": "Nueil-sur-Layon",
-            "EquAccesHandimAire": "Oui",
-            "EquAccesHandimAucun": "Non",
-            "EquAccesHandimSaniPub": "Oui",
-            "EquAccesHandimSaniSpo": "Non",
-            "EquAccesHandimTribune": "Non-concerne",
-            "EquAccesHandimVestiaire": "Oui",
-            "EquAccesHandisAire": "Non",
-            "EquAccesHandisAucun": "Oui",
-            "EquAccesHandisSaniPub": "Non",
-            "EquAccesHandisSaniSpo": "Non",
-            "EquAccesHandisTribune": "Non-concerne",
-            "EquAccesHandisVestiaire": "Non",
-            "EquAccueilAucun": "Non",
-            "EquAccueilAutre": "Non",
-            "EquAccueilBureau": "Non",
-            "EquAccueilBuvette": "Oui",
-            "EquAccueilClub": "Non",
-            "EquAccueilDopage": "Non",
-            "EquAccueilInfirmerie": "Non",
-            "EquAccueilLocalRangement": "Oui",
-            "EquAccueilMedic": "Non",
-            "EquAccueilReception": "Non",
-            "EquAccueilSalle": "Oui",
-            "EquAmenagementAucun": "Oui",
-            "EquAnneeService": null,
-            "EquAthDev": null,
-            "EquAthLongLigneDroite": null,
-            "EquAthNBMarteauMixte": null,
-            "EquAthNbCouloirHorsLigne": null,
-            "EquAthNbCouloirLigne": null,
-            "EquAthNbDisque": null,
-            "EquAthNbJavelot": null,
-            "EquAthNbLancerTotal": null,
-            "EquAthNbMarteau": null,
-            "EquAthNbPoids": null,
-            "EquAthNbSautHauteur": null,
-            "EquAthNbSautLongueur": null,
-            "EquAthNbSautPerche": null,
-            "EquAthNbSautTotal": null,
-            "EquAthNbSautTriple": null,
-            "EquAthRiviere": null,
-            "EquChauffageAutre": "Non",
-            "EquChauffageElectricite": "Non",
-            "EquChauffageFuel": "Non",
-            "EquChauffageGaz": "Non",
-            "EquChauffageNon": "Oui",
-            "EquChauffageSolaire": "Non",
-            "EquChrono": "Non",
-            "EquConfortAucun": "Oui",
-            "EquConfortAutre": "Non",
-            "EquConfortBainBouillonant": "Non",
-            "EquConfortBainVapeur": "Non",
-            "EquConfortSauna": "Non",
-            "EquConfortSolarium": "Non",
-            "EquDateDernierTravauxAucun": "Oui",
-            "EquDateDernierTravauxReal": null,
-            "EquDateMaj": "2014-09-11",
-            "EquDemarcheHQE": "Non",
-            "EquDouche": "Oui",
-            "EquEclairage": "Non",
-            "EquErpCTS": "Non",
-            "EquErpCategorie": null,
-            "EquErpL": "Non",
-            "EquErpN": "Non",
-            "EquErpO": "Non",
-            "EquErpOA": "Non",
-            "EquErpP": "Non",
-            "EquErpPA": "Non",
-            "EquErpR": "Non",
-            "EquErpREF": "Non",
-            "EquErpRPE": "Non",
-            "EquErpSG": "Non",
-            "EquErpX": "Non",
-            "EquGestionDSP": "Non",
-            "EquGpsX": -0.36294,
-            "EquGpsY": 47.11566,
-            "EquHauteurEvolution": ".00",
-            "EquHauteurSurfaceEvo": null,
-            "EquLargeurEvolution": "68.00",
-            "EquLongueurEvolution": "105.00",
-            "EquNatAutre": null,
-            "EquNatCouloir": null,
-            "EquNatEclSub": null,
-            "EquNatFM": null,
-            "EquNatFormeLib": null,
-            "EquNatImHandi": null,
-            "EquNatLargeurBassin": null,
-            "EquNatLongueurBassin": null,
-            "EquNatMM": null,
-            "EquNatMaV": null,
-            "EquNatNbP10": null,
-            "EquNatNbP3": null,
-            "EquNatNbP5": null,
-            "EquNatNbP7": null,
-            "EquNatNbPTotal": null,
-            "EquNatNbT1": null,
-            "EquNatNbT3": null,
-            "EquNatNbTTotal": null,
-            "EquNatPentaglisse": null,
-            "EquNatProfMax": null,
-            "EquNatProfMini": null,
-            "EquNatRiviere": null,
-            "EquNatSonorisationSub": null,
-            "EquNatSurfaceBassin": null,
-            "EquNatSurfacePlageBassin": null,
-            "EquNatSurv": null,
-            "EquNatTobog": null,
-            "EquNatureAETreuil": null,
-            "EquNatureAcPubMec": null,
-            "EquNatureAcPubNau": null,
-            "EquNatureAcPubPed": null,
-            "EquNatureAcPubRout": null,
-            "EquNatureAcSecMec": null,
-            "EquNatureAcSecNau": null,
-            "EquNatureAcSecPed": null,
-            "EquNatureAcSecRout": null,
-            "EquNatureAlert": null,
-            "EquNatureAutorise": null,
-            "EquNatureClassFedeMaxi": null,
-            "EquNatureClassFedeMini": null,
-            "EquNatureESTour": null,
-            "EquNatureLocPed": null,
-            "EquNatureLocTec": null,
-            "EquNaturePDESI": null,
-            "EquNatureSEVoies": null,
-            "EquNatureSKTotalRemontee": null,
-            "EquNatureSignal": null,
-            "EquNbCouloirPiste": null,
-            "EquNbEquIdentique": "1",
-            "EquNbPlaceTribune": "0",
-            "EquNbVestiaireArbitre": "1",
-            "EquNbVestiaireSpo": "4",
-            "EquNom": "Terrain de football Neuf",
-            "EquNomBatiment": null,
-            "EquOuvertSaison": "Non",
-            "EquPresencePataugeoir": null,
-            "EquProximite": "Non",
-            "EquSaeHauteur": null,
-            "EquSaeNbCouloir": null,
-            "EquSaeSurface": null,
-            "EquSanitairePublic": "Oui",
-            "EquSanitaireSportif": "Oui",
-            "EquSono": "Non",
-            "EquSurfaceEvolution": "7140.00",
-            "EquTableauFixe": "Non",
-            "EquTravauxRealConformite": "Non",
-            "EquTravauxRealDegradation": "Non",
-            "EquTravauxRealNorme": "Non",
-            "EquTravauxRealUsager": "Non",
-            "EquTravauxRealVetuste": "Non",
-            "EquUtilAutre": "1",
-            "EquUtilClub": "2",
-            "EquUtilFormation": "1",
-            "EquUtilIndividuel": "2",
-            "EquUtilPerformance": "2",
-            "EquUtilRecreation": "2",
-            "EquUtilScolaire": "1",
-            "EquVestiaireSpoChauffe": "Non",
-            "EquipNatureSituationLib": null,
-            "EquipementFiche": "generique",
-            "EquipementId": "71914",
-            "EquipementTir10": null,
-            "EquipementTir100": null,
-            "EquipementTir200": null,
-            "EquipementTir25": null,
-            "EquipementTir300": null,
-            "EquipementTir50": null,
-            "EquipementTirAutre": null,
-            "EquipementTirPlateau": null,
-            "EquipementTypeLib": "Terrain de football",
-            "FamilleFicheLib": "Terrain de grands jeux",
-            "GestionTypeGestionnairePrincLib": "Commune",
-            "GestionTypeGestionnaireSecLib": null,
-            "GestionTypeProprietairePrincLib": "Commune",
-            "GestionTypeProprietaireSecLib": null,
-            "InsNom": "Complexe Sportif",
-            "InsNumeroInstall": "492320002",
-            "NatureLibelle": "D\u00e9couvert",
-            "NatureSolLib": "Gazon naturel"
-    def setActCode(self, new):
-        self.actCode = new
-
-    def setActLib(self, new):
-        self.actLib = new
-
-    def setActNivLib(self, new):
-        self.actNivLib = new
-
-    def setComInsee(self, new):
-        self.comInsee = new
-
-    def setEquActivitePraticable(self, new):
-        self.equActivitePraticable = new
-
-    def setEquActivitePratique(self, new):
-        self.equActivitePratique = new
-
-    def setEquActiviteSalleSpe(self, new):
-        self.equActiviteSalleSpe = new
-
-    def setEquNbEquIdentique(self, new):
-        self.equNbEquIdentique = new
+    def setEquNom(self, new):
+        self.equNom = new
 
     def setEquipementId(self, new):
         self.equipementId = new
 
+    def setInsNumeroInstall(self, new):
+        self.insNumeroInstall = new
+
+    def getEquNom(self):
+        return self.equNom
+
+    def getEquipementId(self):
+        return self.equipementId
+
+    def getInsNumeroInstall(self):
+        return self.insNumeroInstall
+
     def __repr__(self):
-        return "{} - {} - {} - {} - {} - {} - {} - {} - {}".format(	self.actCode, 
-        															self.actLib, 
-        															self.actNivLib, 
-        															self.comInsee, 
-        															self.equActivitePraticable, 
-        															self.equActivitePratique, 
-        															self.equActiviteSalleSpe, 
-        															self.equNbEquIdentique, 
-        															self.equipementId)
+        return "{} - {} - {}".format(   self.equNom,
+                                        self.equipementId,
+                                        self.insNumeroInstall)
