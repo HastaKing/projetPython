@@ -15,17 +15,19 @@ class WebManager(object):
 		"""
 		Exposes the service at localhost:8080/
 		"""
-		return "There are {0} items".format(len(data))
+		conn = sqlite3.connect("dataBase.db")
+		c = conn.cursor()
+		return "There are {0} items".format(len(c.execute('SELECT * FROM activite ORDER BY ActLib')))
 	 
 	@cherrypy.expose
 	def show_all(self):
 		"""
 		Exposes the service at localhost:8080/show_all/
 		"""
-		conn = sqlite3.connect("equipement.db")
+		conn = sqlite3.connect("dataBase.db")
 		c = conn.cursor()
-		res="<table border='1' style='text-align'><th>Nom</th><th>ID Equipement</th><th>ID Installation</th><tr>"
-		for row in c.execute('SELECT * FROM equipement ORDER BY EquNom'):
+		res="<table border='1' style='text-align'><th>Nom</th><th>ID Activite</th><th>ID Equipement</th><tr>"
+		for row in c.execute('SELECT * FROM activite ORDER BY ActLib'):
 			for elem in row:
 				res = res + "<td>" + str(elem) + "</td>"
 			res = res + "</tr>"

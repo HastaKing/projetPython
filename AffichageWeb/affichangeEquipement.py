@@ -3,7 +3,7 @@ import json
 import sqlite3
  
  
-data = json.loads(open("data/data_installation.json").read())
+data = json.loads(open("data/data_equipement.json").read())
  
  
 class WebManager(object):
@@ -24,8 +24,8 @@ class WebManager(object):
 		"""
 		conn = sqlite3.connect("dataBase.db")
 		c = conn.cursor()
-		res="<table border='1'><th>Ville</th><th>Code Postal</th><th>Adresse</th><th>ID Installation</th><th>Nom Installation</th><th>Latitude</th><th>Longitude</th><tr>"
-		for row in c.execute('SELECT * FROM installation ORDER BY InsCodePostal'):
+		res="<table border='1' style='text-align'><th>Nom</th><th>ID Equipement</th><th>ID Installation</th><tr>"
+		for row in c.execute('SELECT * FROM equipement ORDER BY EquNom'):
 			for elem in row:
 				res = res + "<td>" + str(elem) + "</td>"
 			res = res + "</tr>"

@@ -3,7 +3,7 @@ class Activite:
 		self.equipementId = equipementId
 
 	def setActCode(self, new):
-		self.actCode = 	
+		self.actCode = 	new
 
 	def setActLib(self, new):
 		self.actLib = new

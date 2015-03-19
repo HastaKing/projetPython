@@ -4,7 +4,7 @@ sys.path.append("/hometu/etudiants/E134188G/Annee 2/Semestre 4/Complement Info/p
 from Activite import *
 import sqlite3
 
-conn = sqlite3.connect('activite.db')
+conn = sqlite3.connect('dataBase.db')
 
 c = conn.cursor()
 
@@ -24,10 +24,10 @@ for elem in data_activite["data"]:
 	monActivite.setActCode(elem["ActCode"])
 	monActivite.setActLib(elem["ActLib"])
 
-	values = [(	monActivite.getEquipementId(),
-				monActivite.getActCode(),
-				monActivite.getActLib() )]
-	c.executemany('INSERT INTO activite VALUES (?,?,?,?,?,?,?,?,?,?)', values)
+	values = [(	monActivite.getActCode(),
+				monActivite.getActLib(),
+				monActivite.getEquipementId() )]
+	c.executemany('INSERT INTO activite VALUES (?,?,?)', values)
 	print (monActivite)
 
 #print(json.dumps(jr, sort_keys=True, indent=4, separators=(',', ': ')))

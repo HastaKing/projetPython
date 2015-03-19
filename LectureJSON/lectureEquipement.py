@@ -4,7 +4,7 @@ sys.path.append("/hometu/etudiants/E134188G/Annee 2/Semestre 4/Complement Info/p
 from Equipement import *
 import sqlite3
 
-conn = sqlite3.connect('equipement.db')
+conn = sqlite3.connect('dataBase.db')
 
 c = conn.cursor()
 
