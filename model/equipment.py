@@ -1,4 +1,4 @@
-class Equipement:
+class Equipment:
     def __init__(self, equipementId):
         self.equipementId = equipementId
 

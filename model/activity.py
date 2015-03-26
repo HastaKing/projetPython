@@ -1,4 +1,4 @@
-class Activite:
+class Activity:
 	def __init__(self, equipementId):
 		self.equipementId = equipementId
 
