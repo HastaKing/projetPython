@@ -1,3 +1,7 @@
+"""
+    class installation
+"""
+
 class Installation:
     def __init__(self, comLib):
         self.comLib = comLib

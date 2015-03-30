@@ -1,6 +1,7 @@
 import cherrypy
 import json
 import sqlite3
+from mako.template import Template
 
 
 class WebManager(object):
@@ -12,12 +13,11 @@ class WebManager(object):
         """
         Exposes the service at localhost:8080/
         """
-        maPage = """<h1>Recherche d'installations sportives</h1>
-                    <br></br>
-                    <a href='show_activite?recherche=ActCode&id='>Table d'activités</a></br>
-                    <a href='show_equipement?recherche=EquipementId&id='>Table d'equipements<a/></br>
-                    <a href='show_installation?recherche=ComLib&id='>Table d'installations<a/>
-                    """
+        maPage = ""
+        mytemplate = Template(filename='services/web_service/template/header.html')
+        myothertemplate = Template(filename='services/web_service/template/index.html')
+        maPage += (mytemplate.render())
+        maPage += (myothertemplate.render())
         return maPage
 
     @cherrypy.expose
