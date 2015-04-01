@@ -37,7 +37,7 @@ class WebManager(object):
             conn = sqlite3.connect("dataBase.db")
             c = conn.cursor()
             maPage +="<table class=\"table-striped\"><th>Nom</th><th>ID Equipement</th><th>ID Installation</th><tr>"
-            for row in c.execute("SELECT * FROM equipement WHERE "+recherche+" LIKE \'%"+id+"%\'"):
+            for row in c.execute("SELECT * FROM equipment WHERE "+recherche+" LIKE \'%"+id+"%\'"):
                 for elem in row:
                     maPage += "<td>" + str(elem) + "</td>"
                 maPage += "</tr>"
@@ -88,8 +88,8 @@ class WebManager(object):
         try:
             conn = sqlite3.connect("dataBase.db")
             c = conn.cursor()
-            maPage +="<table><th>ID Activite</th><th>Nom Activite</th><th>ID Equipement</th><tr>"
-            for row in c.execute("SELECT * FROM activite WHERE "+recherche+" LIKE \'%"+id+"%\'"):
+            maPage +="<table><th>ID Activite</th><th>Nom Activity</th><th>ID Equipement</th><tr>"
+            for row in c.execute("SELECT * FROM activity WHERE "+recherche+" LIKE \'%"+id+"%\'"):
                 for elem in row:
                     maPage += "<td>" + str(elem) + "</td>"
                 maPage += "</tr>"
