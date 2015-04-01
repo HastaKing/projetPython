@@ -30,7 +30,6 @@
 			table th {
 			    font-weight: bold;
 			    border-top: none;
-			    background-color: rgb(200, 200, 200);
 			}
 
 			.table-striped tbody tr:nth-child(odd) td {
@@ -592,10 +591,6 @@
 			    -moz-opacity: 0.5;
 			    opacity: 0.5;
 			}
-
-			.bg-axiom {
-				background: url("bg_axiom.png") repeat;
-			}
   		</style>
 		<title>
 			Recherche d'activites
@@ -603,5 +598,4 @@
 
 	</head>
 	<body>
-		<div class="bg-axiom">
-			<h1>Recherche d'installations sportives</h1>
+		<h1>Recherche d'installations sportives</h1>
